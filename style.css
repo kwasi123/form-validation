@@ -1,0 +1,103 @@
+:root {
+    font-size: 16px;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgba(164, 67, 171, 0.792);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.form {
+    background-color: white;
+    padding: 1.5em 2.5em;
+    box-shadow: 0.1em 0.1em 0.5em rgb(52, 51, 51);
+}
+
+.title {
+    margin-bottom: 0.5em;
+}
+
+.normal-text {
+    padding-bottom: 0.5em;
+    border-bottom: 1px solid black;
+    margin-bottom: 1em;
+}
+
+.field {
+    width: 100%;
+    margin-bottom: 1em;
+    position: relative;
+}
+
+label {
+    display: inline-block;
+    margin-bottom: 0.3em;
+}
+
+.input {
+    display: block;
+    width: 100%;
+    height: 30px;
+    padding: 0.5em;
+}
+
+.input:valid {
+    border:1px solid rgba(75, 175, 32, 0.792);
+}
+
+.input:invalid {
+    border:1px solid rgb(247, 76, 76);
+}
+
+.field i {
+    position: absolute;
+    bottom: 25px;
+    right: 5px;
+    font-weight: 600;
+}
+
+.fa-solid.success {
+    color: rgba(75, 175, 32, 0.792);
+    display: none;
+    bottom: 10px;
+    z-index: 2;
+}
+
+.fa-solid.error, .error-msg {
+    color: rgb(247, 76, 76);
+    display: block;
+    z-index: 1;
+}
+
+.buttons {
+    width: 100%;
+}
+
+.btn {
+    width: 100%;
+    display: inline-block;
+    padding: 0.5em 0;
+    border: none;
+    background-color: rgba(138, 121, 205, 0.792);
+    color: rgb(255, 255, 255);
+    text-transform: capitalize;
+    font-weight: 500;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 500ms ease-in-out, 
+        color 500ms ease-in-out;
+}
+
+.btn:hover, .btn:focus {
+    background-color: rgba(159, 99, 215, 0.824);
+    color: rgb(230, 230, 230);
+}

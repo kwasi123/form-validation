@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="main.js" type="text/javascript" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <title>Fsociety | Create Account</title>
+</head>
+<body>
+    <section class="container">
+        <form method="post" class="form">
+            <h1 class="title">Create Account</h1>
+            <p class="normal-text">Fill out the form to create an account.</p>
+
+            <div class="field username">
+                <label for="username">Username</label>
+                <input type="text" name="username" id="username" class="input" 
+                required minlength="6" maxlength="16">
+                <i class="fa-solid fa-circle-check success"></i>
+                <i class="fa-solid fa-circle-exclamation error"></i>
+                <small class="error-msg">Error text.</small>
+            </div>
+
+            <div class="field email">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" class="input" required>
+                <i class="fa-solid fa-circle-check success"></i>
+                <i class="fa-solid fa-circle-exclamation error"></i>
+                <small class="error-msg">Error text.</small>
+            </div>
+
+            <div class="field password1">
+                <label for="password1">Password</label>
+                <input type="password" name="password1" id="password1" class="input" 
+                required minlength="8" maxlength="16">
+                <i class="fa-solid fa-circle-check success"></i>
+                <i class="fa-solid fa-circle-exclamation error"></i>
+                <small class="error-msg">Error text.</small>
+            </div>
+
+            <div class="field password2">
+                <label for="password2">Confirm Password</label>
+                <input type="password" name="password2" id="password2" class="input" 
+                required minlength="8" maxlength="16">
+                <i class="fa-solid fa-circle-check success"></i>
+                <i class="fa-solid fa-circle-exclamation error"></i>
+                <small class="error-msg">Error text.</small>
+            </div>
+
+            <div class="buttons">
+                <input type="submit" value="Register" class="btn" id="register-btn">
+            </div>
+        </form>
+    </section>
+</body>
+</html>
